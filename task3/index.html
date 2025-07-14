@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌡️ Temperature Converter</h1>
+        <div class="converter-card">
+            <div class="input-section">
+                <label for="temperature-input">Enter Temperature:</label>
+                <input 
+                    type="number" 
+                    id="temperature-input" 
+                    placeholder="Enter temperature value"
+                    step="any"
+                >
+                <div class="error-message" id="error-message"></div>
+            </div>
+
+            <div class="unit-selection">
+                <label>Convert from:</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="unit" value="celsius" checked>
+                        <span>Celsius (°C)</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="unit" value="fahrenheit">
+                        <span>Fahrenheit (°F)</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="unit" value="kelvin">
+                        <span>Kelvin (K)</span>
+                    </label>
+                </div>
+            </div>
+
+            <button id="convert-btn" class="convert-button">Convert Temperature</button>
+
+            <div class="result-section" id="result-section">
+                <h3>Converted Temperatures:</h3>
+                <div class="result-grid">
+                    <div class="result-item" id="celsius-result">
+                        <span class="unit-label">Celsius</span>
+                        <span class="temperature-value">--°C</span>
+                    </div>
+                    <div class="result-item" id="fahrenheit-result">
+                        <span class="unit-label">Fahrenheit</span>
+                        <span class="temperature-value">--°F</span>
+                    </div>
+                    <div class="result-item" id="kelvin-result">
+                        <span class="unit-label">Kelvin</span>
+                        <span class="temperature-value">--K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>Temperature Conversion Formulas:</h3>
+            <ul>
+                <li><strong>Celsius to Fahrenheit:</strong> °F = (°C × 9/5) + 32</li>
+                <li><strong>Fahrenheit to Celsius:</strong> °C = (°F - 32) × 5/9</li>
+                <li><strong>Celsius to Kelvin:</strong> K = °C + 273.15</li>
+                <li><strong>Kelvin to Celsius:</strong> °C = K - 273.15</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
