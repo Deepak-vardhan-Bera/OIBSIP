@@ -49,7 +49,7 @@ The goal of this internship is to gain hands-on experience in frontend web devel
 
 ## 🗂 Repository Structure
 
-OASIS/
+```OASIS/
 ├── task1/
 │   ├── index.html
 │   ├── style.css
@@ -65,7 +65,7 @@ OASIS/
 │   ├── script.js
 │   └── README.md
 └── README.md 
-
+```
 
 ---
 
